@@ -1,0 +1,5 @@
+banana|null|89
+dates|null|289
+coffee|null|5
+oatmeal|null|389
+milk 3.2|null|61
