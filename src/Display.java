@@ -34,30 +34,35 @@ public class Display extends JFrame {
         dateLabel = new JLabel();
         dateLabel.setSize(new Dimension(100,100));
         dateLabel.setText("Date :");
+        dateLabel.setBorder(BorderFactory.createEmptyBorder(10,0,10,10));
 
         totalLabel = new JLabel();
         totalLabel.setSize(new Dimension(100,100));
         totalLabel.setText("Total :");
+        totalLabel.setBorder(BorderFactory.createEmptyBorder(0,0,10,10));
 
         JPanel logNewPanel = new JPanel();
-        logNewPanel.setPreferredSize(new Dimension(600, 120));
-        logNewPanel.setMinimumSize(new Dimension(600, 120));
-        logNewPanel.setMinimumSize(new Dimension(600, 120));
+        logNewPanel.setPreferredSize(new Dimension(0, 90));
+        logNewPanel.setMinimumSize(new Dimension(0, 90));
+        logNewPanel.setMinimumSize(new Dimension(0, 90));
         logNewPanel.setBackground(Color.gray);
         logNewPanel.setLayout(new BoxLayout(logNewPanel, BoxLayout.LINE_AXIS));
+        logNewPanel.setBorder(BorderFactory.createEmptyBorder(0,20,0,20));
 
         JLabel addLabel = new JLabel();
         addLabel.setSize(new Dimension(100,100));
-        addLabel.setText("Add Entry:");
+        addLabel.setText("Add Entry: ");
 
         foodNameEntry = new JTextField();
-        foodNameEntry.setPreferredSize(new Dimension(200,30));
-        foodNameEntry.setMinimumSize(new Dimension(200,30));
-        foodNameEntry.setMaximumSize(new Dimension(200, 30));
+        foodNameEntry.setPreferredSize(new Dimension(WIDTH - 400,30));
+        foodNameEntry.setMinimumSize(new Dimension(WIDTH - 400,30));
+        foodNameEntry.setMaximumSize(new Dimension(WIDTH - 400, 30));
+        foodNameEntry.setBorder(BorderFactory.createEmptyBorder(0,10,0,10));
 
         JLabel gramsLabel = new JLabel();
         gramsLabel.setSize(new Dimension(100,100));
-        gramsLabel.setText("Grams :");
+        gramsLabel.setText("Grams:");
+        gramsLabel.setBorder(BorderFactory.createEmptyBorder(0,10,0,0));
 
         gramsFieldEntry = new JTextField();
         gramsFieldEntry.setPreferredSize(new Dimension(80,30));
@@ -65,7 +70,7 @@ public class Display extends JFrame {
         gramsFieldEntry.setMaximumSize(new Dimension(80, 30));
 
         newEntryBtn = new JButton();
-        newEntryBtn.setSize(new Dimension(100,200));
+        newEntryBtn.setSize(new Dimension(100,50));
         newEntryBtn.setText("Submit");
 
         logNewPanel.add(addLabel);
@@ -112,7 +117,7 @@ public class Display extends JFrame {
         gramsField.setMaximumSize(new Dimension(80, 30));
 
         addNewFoodBtn = new JButton();
-        addNewFoodBtn.setSize(new Dimension(100,200));
+        addNewFoodBtn.setSize(new Dimension(100,50));
         addNewFoodBtn.setText("Add");
 
         newFoodPanel.add(addLabel);

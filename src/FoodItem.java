@@ -43,28 +43,4 @@ public class FoodItem {
     public int hashCode() {
         return name.hashCode();
     }
-
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getCalPer100Gr() {
-        return calPer100Gr;
-    }
-
-    public void setCalPer100Gr(int calPer100Gr) {
-        this.calPer100Gr = calPer100Gr;
-    }
 }

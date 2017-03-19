@@ -129,7 +129,7 @@ public class Foodie implements Runnable{
 
 //___________________________________________________________________________
         //ADD NEW FOOD TO FOODS FILE
-private void addNewFoodListener(){
+    private void addNewFoodListener(){
         display.getAddNewFoodBtn().addActionListener((ActionEvent event) -> {
             String name = display.getFoodName().getText();
             int calsPer100 = Integer.valueOf(display.getGramsField().getText());
