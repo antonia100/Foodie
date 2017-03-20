@@ -12,6 +12,9 @@ public class Foodie implements Runnable{
         display = new Display();
         logsFile = new File("src/res/logs.txt");
         foodsFile = new File("src/res/foods.txt");
+
+        Thread thread = new Thread(this);
+        thread.start();
     }
 
     @Override
